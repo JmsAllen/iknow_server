@@ -10,4 +10,6 @@ public interface UserService {
     void updateAUserById(User user);
     User queryAUserById(Integer id);
     List<User> queryAllUsers();
+    boolean queryUserIsExist(String username) throws Exception;
+    void saveUser(User user);
 }
