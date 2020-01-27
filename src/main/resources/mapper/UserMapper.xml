@@ -13,6 +13,10 @@
         select * from user where id = #{id}
     </select>
 
+    <select id="queryUserByName" resultType="User">
+        select * from user where username = #{username}
+    </select>
+
     <update id="updateUserById">
         update user set username = #{username}, password = #{password}, nickname = #{nickname}
         where id = #{id}

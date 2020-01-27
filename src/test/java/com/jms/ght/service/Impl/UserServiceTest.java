@@ -20,4 +20,10 @@ public class UserServiceTest extends BaseTest {
             System.out.println(user);
         }
     }
+
+    @Test
+    public void queryUserIsExist() throws Exception {
+        boolean jmss = userService.queryUserIsExist("root");
+        System.out.println(jmss);
+    }
 }

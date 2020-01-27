@@ -23,8 +23,14 @@ public class UserMapperTest extends BaseTest {
     }
 
     @Test
-    public void findUser() {
-        User user = userMapper.queryUserById(1);
+    public void findUserById() {
+        User user = userMapper.queryUserById(2);
+        System.out.println(user);
+    }
+
+    @Test
+    public void findUserByName() {
+        User user = userMapper.queryUserByName("root");
         System.out.println(user);
     }
 

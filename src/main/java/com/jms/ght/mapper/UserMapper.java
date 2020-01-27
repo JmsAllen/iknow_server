@@ -10,5 +10,6 @@ public interface UserMapper {
     void deleteUserById(Integer id);
     void updateUserById(User user);
     User queryUserById(Integer id);
+    User queryUserByName(String username);
     List<User> queryUsers(@Param("offset") int offset, @Param("limit") int limit);
 }
